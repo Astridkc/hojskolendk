@@ -6,36 +6,95 @@
 @import "tailwindcss-intersect";
 
 @font-face {
-  font-family: 'Honk';
-  src: url('/fonts/Honk-Regular-VariableFont_MORF,SHLN.ttf') format('truetype');
+  font-family: 'Archivo-Black';
+  src: url('/fonts/ArchivoBlack-Regular.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Quicksand';
-  src: url('/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+  font-family: 'Afacad';
+  src: url('/fonts/Afacad-VariableFont_wght.ttf') format('truetype');
 }
 
-@font-face {
-  font-family: 'Domine';
-  src: url('/fonts/Domine-Regular.ttf') format('truetype');
-}
+
 
 @theme {
   /* Her tilføjes theme variable // tokens */
 
   /*Farver */
-  --color-primary-400: #00E4F5;
-  --color-primary-500: #006269;
-  --color-primary-600: #006D75;
-  --color-secondary-400: #F5E400;
-  --color-secondary-500: #F5A600;
-  --color-secondary-600: #F57A00;
+  --primary-color-blue: #39576C;
+  --primary-color-offwhite: #FFFCF7;
+  --primary-color-orange: #CE4B1D;
+  --primary-color-beige: #F2E3D0;
+  --primary-color-lightblue: #DAE6EB;
 
   /*Typografi */
-  --font-display: 'Honk', monospace;
-  --font-sans: 'Quicksand', sans-serif;
-  --font-serif: 'Domine', serif;
+  --font-main: 'Archivo-Black', monospace;
+  --font-sub: 'Afacad', sans-serif;
 }
+/* Typografi */
+.Titel {
+  font-family: var(--font-main);
+}
+.H1 {
+  font-family: var(--font-main);
+}
+.H2 {
+  font-family: var(--font-sub);
+}
+.H3 {
+  font-family: var(--font-sub);
+}
+.H4 {
+  font-family: var(--font-main);
+}
+.Brødtekst {
+  font-family: var(--font-sub);
+}
+
+
+
+
+.Titel-mobil {
+  font-family: var(--font-main);
+}
+.H1-mobil {
+  font-family: var(--font-main);
+}
+.H2-mobil {
+  font-family: var(--font-sub);
+}
+.H3-mobil {
+  font-family: var(--font-sub);
+}
+.H4-mobil {
+  font-family: var(--font-main);
+}
+.Brødtekst-mobil {
+  font-family: var(--font-sub);
+}
+
+/* Farver */
+
+.color-primary-blue {
+  color: var(--primary-color-blue);
+}
+.color-primary-offwhite {
+  color: var(--primary-color-offwhite);
+}
+.color-primary-orange {
+  color: var(--primary-color-orange);
+}
+.color-primary-beige {
+  color: var(--primary-color-beige);
+}
+.color-primary-lightblue {
+  color: var(--primary-color-lightblue);
+}
+
+.bg-primary-offwhite {
+  background-color: var(--primary-color-offwhite);
+}
+
 
 @layer base {
 
