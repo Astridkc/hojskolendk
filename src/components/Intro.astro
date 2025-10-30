@@ -1,12 +1,23 @@
 ---
-import "../styles/tailwind.css";
 import Text from "../components/Text.astro";
 ---
 
-<Text teksttype="titel" stylingclasses="color-primary-orange">hey world!!</Text>
+<section class="px-8 grid gap-4 md:gap-8 md:grid-cols-2">
+    <div>
+        <Text teksttype="h2" stylingclasses="pb-2">DIT LIVS EVENTYR</Text>
+        <Text teksttype="p" stylingclasses="pb-4">HÖJSKOLENDK er en dansk højskole for unge mellem 18 og 30 år.Vi brænder for fællesskab, eventyr og mødet med nye kulturer derfor tilbyder vi højskoleophold i udlandet. Tag med, hvis du vil opleve verden med rygsæk, få nye venner, lære om fremmede kulturer og være en del af et stærkt fællesskab. Som medlem af Rejsegarantifonden sikrer vi dig en tryg og meningsfuld rejse. <br /> Vi glæder os til at møde dig!</Text>
 
-<Text teksttype="h2">hey world!!</Text>
-
-<Text teksttype="h3">hey world!!</Text>
-
-<Text teksttype="h4">hey world!!</Text>
+        <div class="w-80 h-20 relative">
+            <div class="w-40 h-10 md:w-80 md:h-20 left-0 top-0 absolute bg-orange-700 rounded-[35px]"></div>
+            <div class="left-[30px] top-[7px] md:left-[50px] md:top-[28px] absolute justify-start text-white md:text-4xl font-bold font-['Afacad'] uppercase leading-6">læs mere her!</div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <img src="/intro1.jpg" alt="" class="w-47 h-57 md:w-75 md:h-96 rounded-xl relative ml-18" />
+        </div>
+        <div>
+            <img src="/intro2.jpg" alt="" class="w-32 h-32 md:w-64 md:h-64 rounded-xl absolute right-[120px] bottom-[30px] md:top-[90px] md:right-[140px]" />
+        </div>
+    </div>
+</section>
