@@ -31,6 +31,9 @@
   --font-main: 'Archivo-Black', monospace;
   --font-sub: 'Afacad', sans-serif;
 }
+
+
+@layer base {
 /* Typografi */
 .Titel {
   font-family: var(--font-main);
@@ -94,9 +97,6 @@
 .bg-primary-offwhite {
   background-color: var(--primary-color-offwhite);
 }
-
-
-@layer base {
 
 }
 
